@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script src="js/script.js" defer></script>
+    <title>Produto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="login.html" class="logo">Arcadia store</a>
+            <ul class="nav-list">
+                <li><a href="cadastro.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="categoria.html">Categoria</a></li>
+                <li><a href="produto.html">Produto</a></li>
+                <li><a href="carrinhoCompra.html"><i><i class="bi bi-cart4"></i></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+        <h1 class="title">
+            Insira os dados abaixo para cadastrar o produto
+        </h1>
+        <form action="" method="get" class="form-caption">
+            <label for="name">Nome</label>
+            <input type="text" id="name">
+
+            <label for="select" class="select-category">Categoria</label>
+            <select name="select" id="select">
+                <option value="ferramentas">Ferramentas</option>
+                <option value="pericíveis">Pericíveis</option>
+                <option value="móveis">Móveis</option>
+            </select>
+
+            <label for="ingredientes">Ingredientes</label>
+            <input type="text" id="ingredientes">
+
+            <label for="validate">Validade</label>
+            <input type="date" id="validate">
+
+            <label for="amount-available">Quantidade disponivel</label>
+            <input type="number" id="amount-available">
+
+            <label for="price">Preço</label>
+            <input type="text" id="price" placeholder="R$:00,00">
+
+            <button type="submit" id="send">Enviar</button>
+        </form>
+    </main>
+    <main class="container">
+        <h1 class="title">
+            Está listado abaixo os produtos cadastros por categoria
+        </h1>
+        <section class="details-product">
+            <p>Categoria:</p>
+            <p class="product-value" id="category-result">Valor</p>
+            <br>
+            <p>Produto:</p>
+            <p class="product-value" id="product-result">Valor</p>
+        </section>
+    </main>
+</body>
+
+</html>
